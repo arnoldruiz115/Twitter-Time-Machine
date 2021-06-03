@@ -2,7 +2,7 @@ node_modules
 .env
 # Server
 server/node_modules
-server/routes/testData
+server/routes/testData.js
 
 # Front end
 time-machine/node_modules

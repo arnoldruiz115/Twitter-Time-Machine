@@ -1,0 +1,8 @@
+node_modules
+.env
+# Server
+server/node_modules
+server/routes/testData
+
+# Front end
+time-machine/node_modules

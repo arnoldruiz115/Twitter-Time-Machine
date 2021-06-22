@@ -38,7 +38,7 @@ class TimeMachine extends Component{
     }
 
     callAPI = () => {
-        fetch("http://localhost:4000/twit", {
+        fetch("http://localhost:4000/test", {
             method: "post",
             headers: { 'Content-Type':'application/json' },
             body: JSON.stringify({

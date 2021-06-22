@@ -17,7 +17,10 @@ class DateForm extends React.Component{
     const minDate = new Date('11/07/2010')
     return (
         <div className='TTM-container'>
-            <div className='TTM-Title'>Select Date</div>
+            <div className='TTM-Title'>
+                <div><img className="back-button" onClick={this.return} src="back-button-white.svg"/></div>
+                <div>Select Date</div>
+            </div>
             <div className='TTM-Date'>
                 <DatePicker
                 onChange={dateHandler}
@@ -28,10 +31,9 @@ class DateForm extends React.Component{
                 minDate={minDate}
                 />
                 <div className='button-container'>
-                    <button onClick={this.return}>Back</button>
                     {values.timeSelected === null ? 
-                        <button className="disabled-continue">Continue</button> :
-                        <button onClick={this.continue}>Continue</button>
+                        <button className="continue-button disabled">Continue</button> :
+                        <button className="continue-button" onClick={this.continue}>Continue</button>
                     }
                 </div>
             </div>
